@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emerson Andrade | Advogado em Vitória da Conquista – BA | OAB/BA 83.806</title>
-<meta name="description" content="Advocacia cível em Vitória da Conquista – BA: Direito Imobiliário, Consumidor, Família e Sucessões. Atendimento presencial com hora marcada e por videochamada em toda a Bahia. OAB/BA 83.806.">
+<meta name="description" content="Advocacia cível em Vitória da Conquista – BA, com atuação judicial e extrajudicial: Direito Imobiliário, Consumidor, Família e Sucessões. Inventário, divórcio e usucapião em cartório. Atendimento presencial com hora marcada e por videochamada em toda a Bahia. OAB/BA 83.806.">
 <link rel="canonical" href="https://emersonandrade.adv.br/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
@@ -35,9 +35,26 @@
     {"@type": "State", "name": "Bahia"}
   ],
   "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"}],
-  "knowsAbout": ["Direito Imobiliário", "Direito do Consumidor", "Direito de Família", "Direito das Sucessões", "Inventário", "Usucapião"],
+  "knowsAbout": ["Direito Imobiliário", "Direito do Consumidor", "Direito de Família", "Direito das Sucessões", "Inventário extrajudicial", "Divórcio extrajudicial", "Usucapião extrajudicial", "Adjudicação compulsória extrajudicial", "Retificação de registro imobiliário", "Planejamento sucessório", "Contratos", "Assessoria jurídica contínua"],
   "founder": {"@type": "Person", "@id": "https://emersonandrade.adv.br/#emerson", "name": "Emerson Andrade", "alternateName": "Emerson Santana de Andrade da Costa", "jobTitle": "Advogado", "identifier": "OAB/BA 83.806", "workLocation": {"@type": "Place", "name": "Vitória da Conquista - BA"}, "image": "https://emersonandrade.adv.br/img/emerson-retrato.jpg", "sameAs": ["https://www.instagram.com/emersonandrade.adv/"]},
   "sameAs": ["https://www.instagram.com/emersonandrade.adv/", "https://maps.google.com/?cid=7492074179076062159"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "O controle exercido pelo Estado em encontro com a liberdade de expressão",
+  "url": "https://rbds.ieprev.com.br/rbds/article/view/297",
+  "datePublished": "2025-02-27",
+  "inLanguage": "pt-BR",
+  "author": [
+    {"@type": "Person", "name": "Celeste Dias Amorim"},
+    {"@type": "Person", "@id": "https://emersonandrade.adv.br/#emerson", "name": "Emerson Santana de Andrade da Costa"}
+  ],
+  "isPartOf": {"@type": "PublicationIssue", "issueNumber": "1", "isPartOf": {"@type": "PublicationVolume", "volumeNumber": "8", "isPartOf": {"@type": "Periodical", "name": "Revista Brasileira de Direito Social", "issn": "2595-7414"}}},
+  "pageStart": "5",
+  "pageEnd": "18"
 }
 </script>
 <style>
@@ -89,7 +106,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(20,31,42,.96);backdrop-f
 .brand-txt{display:flex;flex-direction:column;line-height:1.1}
 .brand-txt strong{font-family:var(--serif);font-weight:600;font-size:1.28rem;letter-spacing:.09em}
 .brand-txt small{font-size:.6rem;letter-spacing:.26em;color:var(--sand);text-transform:uppercase}
-.menu{display:flex;gap:30px;list-style:none;align-items:center}
+.menu{display:flex;gap:26px;list-style:none;align-items:center}
+.menu a,.brand-txt strong,.brand-txt small{white-space:nowrap}
 .menu a{text-decoration:none;color:#D5DAE0;font-size:.84rem;letter-spacing:.05em;transition:color .2s}
 .menu a:hover{color:var(--gold)}
 .menu .btn{padding:.65rem 1.15rem;font-size:.78rem;color:var(--navy)}
@@ -162,6 +180,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(20,31,42,.96);backdrop-f
 .creds li{display:grid;grid-template-columns:180px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:.95rem}
 .creds li span{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;padding-top:3px}
 .creds li b{font-weight:500;color:var(--navy)}
+.creds li b a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold-deep);text-underline-offset:3px}
+.creds li b a:hover{color:var(--gold-deep)}
+.creds li b small{display:block;font-weight:400;font-size:.84rem;color:var(--muted);margin-top:4px}
 
 /* ---------- atendimento ---------- */
 .atend{overflow:hidden}
@@ -275,6 +296,39 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
   .foot{grid-template-columns:1fr}
   .ctas .btn{width:100%}
 }
+
+/* ---------- extrajudicial ---------- */
+.extra{overflow:hidden}
+.extra::before{content:"";position:absolute;left:-220px;top:-60px;width:620px;height:600px;background:url(img/marca-dagua.png) no-repeat left top/contain;opacity:.28;pointer-events:none}
+.extra .wrap{position:relative}
+.extra-head{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end;margin-bottom:3.2rem}
+.extra-head .lead{color:#CFD6DC}
+.ex-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(210,181,76,.35);border-left:1px solid rgba(210,181,76,.35)}
+.ex{padding:30px 26px 34px;border-right:1px solid rgba(210,181,76,.35);border-bottom:1px solid rgba(210,181,76,.35);transition:background .25s}
+.ex:hover{background:rgba(255,255,255,.035)}
+.ex span{font-family:var(--serif);font-size:1.05rem;color:var(--gold)}
+.ex h3{font-size:1.45rem;color:var(--white);margin:.5rem 0 .55rem;line-height:1.15}
+.ex p{font-size:.9rem;font-weight:300;color:#B9C2CA;line-height:1.6}
+.extra-foot{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;margin-top:2.6rem}
+.extra-foot p{font-size:.84rem;color:#97A3AE;max-width:560px}
+@media (max-width:1020px){.extra-head{grid-template-columns:1fr;gap:20px}.ex-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.ex-grid{grid-template-columns:1fr}.ex{padding:24px 22px}}
+
+/* ---------- assessoria ---------- */
+.as-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.as-lead{color:var(--muted);margin:1.4rem 0 2rem;max-width:480px}
+.as-list{list-style:none;border-top:1px solid var(--line)}
+.as-list li{display:flex;gap:26px;padding:24px 0;border-bottom:1px solid var(--line)}
+.as-list span{flex:none;width:34px;font-family:var(--serif);font-size:1.15rem;color:var(--gold-deep);padding-top:2px}
+.as-list h3{font-size:1.5rem;color:var(--navy);margin-bottom:.25rem}
+.as-list p{color:var(--muted);font-size:.95rem}
+.as-note{font-size:.84rem;color:var(--muted);margin-top:1.2rem;font-style:italic}
+@media (max-width:1020px){.as-grid{grid-template-columns:1fr;gap:44px}}
+@media (max-width:1120px){
+  .menu{display:none;position:absolute;top:76px;left:0;right:0;background:var(--navy-deep);flex-direction:column;align-items:flex-start;padding:22px 20px 28px;gap:18px;border-bottom:1px solid rgba(210,181,76,.2)}
+  .menu.open{display:flex}
+  .burger{display:block}
+}
 </style>
 </head>
 <body>
@@ -288,7 +342,9 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
     </a>
     <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
     <ul class="menu" id="menu">
-      <li><a href="#areas">Áreas de atuação</a></li>
+      <li><a href="#areas">Áreas</a></li>
+      <li><a href="#extrajudicial">Extrajudicial</a></li>
+      <li><a href="#assessoria">Assessoria</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#atendimento">Atendimento</a></li>
       <li><a href="#duvidas">Dúvidas</a></li>
@@ -305,7 +361,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
     <div class="reveal">
       <div class="eyebrow">Emerson Andrade · OAB/BA 83.806</div>
       <h1>Advocacia cível em <span class="gold-text">Vitória da Conquista</span> e em toda a Bahia.</h1>
-      <p class="lead">Direito Imobiliário, Direito do Consumidor, Direito de Família e Sucessões. Análise técnica de cada caso, com atendimento presencial ou por videochamada.</p>
+      <p class="lead">Atuação judicial e extrajudicial em Direito Imobiliário, Direito do Consumidor, Direito de Família e Sucessões. Análise técnica de cada caso, com atendimento presencial ou por videochamada.</p>
       <div class="ctas">
         <a class="btn btn-gold" data-wa="Olá! Gostaria de agendar um atendimento." href="https://wa.me/5577998659195" target="_blank" rel="noopener">
           <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-3.8 1.2 1.2-3.7-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5.2 9.9 10 5.2 16 5.2s10.8 4.7 10.8 10.6S22 26.4 16 26.4z"/></svg>
@@ -382,15 +438,50 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
   </div>
 </section>
 
-<!-- ATUAÇÃO PREVENTIVA -->
-<section class="prev">
+<!-- EXTRAJUDICIAL -->
+<section class="extra on-dark" id="extrajudicial">
   <div class="wrap">
-    <div class="eyebrow reveal"><b>02</b> Atuação</div>
-    <p class="quote reveal">A orientação jurídica tem mais valor <em class="gold-text">antes</em> do conflito do que depois dele.</p>
-    <div class="pillars">
-      <div class="pillar reveal"><span>I.</span><h3>Prevenção</h3><p>Análise de contratos e documentos antes da assinatura, para reduzir riscos e evitar litígios futuros.</p></div>
-      <div class="pillar reveal"><span>II.</span><h3>Fundamentação</h3><p>Orientações baseadas na legislação vigente e no entendimento atual dos tribunais.</p></div>
-      <div class="pillar reveal"><span>III.</span><h3>Transparência</h3><p>Etapas, riscos e alternativas de cada caso apresentados de forma objetiva e acessível.</p></div>
+    <div class="extra-head reveal">
+      <div>
+        <div class="eyebrow"><b>02</b> Atuação extrajudicial</div>
+        <h2>Nem todo caso precisa <span class="gold-text">virar processo.</span></h2>
+      </div>
+      <p class="lead">Quando a lei permite, muitas questões podem ser resolvidas diretamente em cartório ou por acordo, com mais agilidade e menos desgaste para todos os envolvidos.</p>
+    </div>
+    <div class="ex-grid reveal">
+      <div class="ex"><span>01</span><h3>Inventário em cartório</h3><p>Inventário e partilha por escritura pública, quando há consenso entre os herdeiros.</p></div>
+      <div class="ex"><span>02</span><h3>Divórcio e união estável</h3><p>Divórcio consensual, reconhecimento e dissolução de união estável por escritura pública.</p></div>
+      <div class="ex"><span>03</span><h3>Usucapião extrajudicial</h3><p>Reconhecimento da propriedade diretamente no Cartório de Registro de Imóveis.</p></div>
+      <div class="ex"><span>04</span><h3>Adjudicação compulsória</h3><p>Para quem pagou pelo imóvel e não recebeu a escritura, pela via extrajudicial.</p></div>
+      <div class="ex"><span>05</span><h3>Retificação e regularização</h3><p>Correção de área, averbação de construção e demais ajustes na matrícula do imóvel.</p></div>
+      <div class="ex"><span>06</span><h3>Testamento e planejamento</h3><p>Testamento público e organização antecipada do patrimônio familiar.</p></div>
+      <div class="ex"><span>07</span><h3>Notificações e acordos</h3><p>Notificações extrajudiciais e negociação de conflitos, inclusive nas relações de consumo.</p></div>
+      <div class="ex"><span>08</span><h3>Contratos</h3><p>Elaboração e revisão de contratos antes da assinatura, para prevenir litígios.</p></div>
+    </div>
+    <div class="extra-foot reveal">
+      <p>A via extrajudicial depende do preenchimento dos requisitos legais de cada caso. A análise inicial indica se a solução em cartório é possível.</p>
+      <a class="btn btn-gold" data-wa="Olá! Gostaria de saber se o meu caso pode ser resolvido em cartório." href="https://wa.me/5577998659195" target="_blank" rel="noopener">Meu caso pode ser resolvido em cartório?</a>
+    </div>
+  </div>
+</section>
+
+<!-- ASSESSORIA CONTÍNUA -->
+<section class="prev" id="assessoria">
+  <div class="wrap as-grid">
+    <div class="reveal">
+      <div class="eyebrow"><b>03</b> Assessoria jurídica contínua</div>
+      <p class="quote" style="font-size:clamp(2rem,3.6vw,2.9rem)">A orientação jurídica tem mais valor <em class="gold-text">antes</em> do conflito.</p>
+      <p class="as-lead">Acompanhamento jurídico contínuo, para quem precisa de orientação com frequência e quer ter um advogado de confiança à disposição.</p>
+      <a class="btn btn-dark" data-wa="Olá! Gostaria de saber mais sobre a assessoria jurídica contínua." href="https://wa.me/5577998659195" target="_blank" rel="noopener">Quero saber sobre a assessoria contínua</a>
+    </div>
+    <div class="reveal">
+      <ul class="as-list">
+        <li><span>I.</span><div><h3>Orientação contínua</h3><p>Orientação jurídica sempre que surgir uma dúvida, antes de decidir ou assinar.</p></div></li>
+        <li><span>II.</span><div><h3>Contratos e documentos</h3><p>Análise e elaboração de contratos, notificações e demais documentos.</p></div></li>
+        <li><span>III.</span><div><h3>Negociações e acordos</h3><p>Condução de negociações para resolver conflitos sem desgaste.</p></div></li>
+        <li><span>IV.</span><div><h3>Atuação nas demandas</h3><p>Atuação nas demandas judiciais e extrajudiciais, conforme o contrato.</p></div></li>
+      </ul>
+      <p class="as-note">Escopo e condições definidos em contrato.</p>
     </div>
   </div>
 </section>
@@ -400,7 +491,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
   <div class="wrap sobre-grid">
     <div class="frame reveal"><img src="img/emerson-retrato.jpg" alt="Retrato de Emerson Andrade" width="760" height="760" loading="lazy"></div>
     <div class="reveal">
-      <div class="eyebrow"><b>03</b> Sobre</div>
+      <div class="eyebrow"><b>04</b> Sobre</div>
       <h2>Emerson <span class="gold-text">Andrade</span></h2>
       <p>Advogado inscrito na Ordem dos Advogados do Brasil, Seção Bahia, com atuação na área cível, com ênfase em Direito Imobiliário, Direito do Consumidor, Direito de Família e Sucessões.</p>
       <p>Atende clientes em Vitória da Conquista e região de forma presencial e, em toda a Bahia, por videochamada, com acompanhamento de processos eletrônicos.</p>
@@ -408,6 +499,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
         <li><span>Registro</span><b>OAB/BA 83.806</b></li>
         <li><span>Formação</span><b>Bacharel em Direito pela Anhanguera</b></li>
         <li><span>Especialização</span><b>Pós-graduando em Direito Civil e Processo Civil</b></li>
+        <li><span>Publicação</span><b>Artigo “<a href="https://rbds.ieprev.com.br/rbds/article/view/297" target="_blank" rel="noopener">O controle exercido pelo Estado em encontro com a liberdade de expressão</a>”<small>Revista Brasileira de Direito Social, v. 8, n. 1, 2025 · em coautoria</small></b></li>
         <li><span>Escritório</span><b>Rua Rotary Club, 51, Sala 08, Centro – Vitória da Conquista – BA</b></li>
       </ul>
     </div>
@@ -417,7 +509,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
 <!-- ATENDIMENTO -->
 <section class="atend on-dark" id="atendimento">
   <div class="wrap">
-    <div class="eyebrow reveal"><b>04</b> Atendimento</div>
+    <div class="eyebrow reveal"><b>05</b> Atendimento</div>
     <h2 class="reveal">Presencial ou <span class="gold-text">por videochamada</span></h2>
     <div class="modes">
       <div class="mode reveal">
@@ -449,7 +541,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
     <div class="content-grid reveal">
       <a href="https://www.instagram.com/emersonandrade.adv/" target="_blank" rel="noopener"><img src="img/conteudo-inventario.jpg" alt="Publicação: Inventário — por que ele não é opcional" width="640" height="800" loading="lazy"></a>
       <div>
-        <div class="eyebrow"><b>05</b> Conteúdo</div>
+        <div class="eyebrow"><b>06</b> Conteúdo</div>
         <h2>Informação jurídica <span class="gold-text">no Instagram</span></h2>
         <p>Publicações informativas sobre Direito Imobiliário, Consumidor, Família e Sucessões, em linguagem acessível.</p>
         <a class="btn btn-dark" href="https://www.instagram.com/emersonandrade.adv/" target="_blank" rel="noopener">Seguir @emersonandrade.adv</a>
@@ -462,7 +554,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
 <section class="faq" id="duvidas">
   <div class="wrap faq-grid">
     <div class="reveal">
-      <div class="eyebrow"><b>06</b> Dúvidas</div>
+      <div class="eyebrow"><b>07</b> Dúvidas</div>
       <h2>Perguntas <span class="gold-text">frequentes</span></h2>
       <p class="note">As informações desta seção têm caráter informativo e não substituem a análise individual de cada caso.</p>
     </div>
@@ -471,6 +563,8 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
       <details><summary>Inventário e divórcio em cartório exigem advogado?</summary><p>Sim. A lei exige a participação de advogado tanto no inventário quanto no divórcio realizados em cartório (arts. 610, §2º, e 733, §2º, do Código de Processo Civil), assim como nos procedimentos judiciais.</p></details>
       <details><summary>Um imóvel adquirido apenas por contrato está regularizado?</summary><p>Não necessariamente. A propriedade imobiliária se transfere com o registro no Cartório de Registro de Imóveis. A situação de cada imóvel depende da análise de sua documentação.</p></details>
       <details><summary>O que caracteriza uma cobrança indevida?</summary><p>É a cobrança de valor não contratado, já quitado ou em desacordo com o contrato. A existência de irregularidade depende da análise dos documentos de cada caso.</p></details>
+      <details><summary>Quais casos podem ser resolvidos em cartório?</summary><p>Entre outros, inventário e partilha, divórcio e união estável consensuais, usucapião, adjudicação compulsória e retificações de registro imobiliário podem tramitar em cartório, desde que preenchidos os requisitos legais. A análise do caso indica se a via extrajudicial é possível.</p></details>
+      <details><summary>Como funciona a assessoria jurídica contínua?</summary><p>É um acompanhamento jurídico permanente, mediante contrato, que inclui orientação, análise de documentos e atuação nas demandas do cliente, nos termos definidos em contrato.</p></details>
       <details><summary>O atendimento pode ser feito totalmente on-line?</summary><p>Sim. As reuniões podem ser realizadas por videochamada e a maior parte dos processos tramita de forma eletrônica, o que permite o atendimento de clientes em toda a Bahia.</p></details>
       <details><summary>Como funciona o agendamento?</summary><p>O agendamento é feito pelo WhatsApp (77) 99865-9195, de segunda a sexta-feira, das 8h às 18h, para atendimento presencial ou por videochamada. Situações urgentes podem ser comunicadas pelo mesmo canal a qualquer horário.</p></details>
     </div>
@@ -498,7 +592,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
       <div><img src="img/logo.png" alt="Emerson Andrade Advocacia e Consultoria Jurídica" width="808" height="486" loading="lazy"></div>
       <div>
         <h4>Navegação</h4>
-        <ul><li><a href="#areas">Áreas de atuação</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#atendimento">Atendimento</a></li><li><a href="#duvidas">Dúvidas frequentes</a></li></ul>
+        <ul><li><a href="#areas">Áreas de atuação</a></li><li><a href="#extrajudicial">Atuação extrajudicial</a></li><li><a href="#assessoria">Assessoria contínua</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#atendimento">Atendimento</a></li><li><a href="#duvidas">Dúvidas frequentes</a></li></ul>
       </div>
       <div>
         <h4>Contato</h4>

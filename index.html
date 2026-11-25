@@ -106,7 +106,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(20,31,42,.96);backdrop-f
 .brand-txt{display:flex;flex-direction:column;line-height:1.1}
 .brand-txt strong{font-family:var(--serif);font-weight:600;font-size:1.28rem;letter-spacing:.09em}
 .brand-txt small{font-size:.6rem;letter-spacing:.26em;color:var(--sand);text-transform:uppercase}
-.menu{display:flex;gap:26px;list-style:none;align-items:center}
+.menu{display:flex;gap:22px;list-style:none;align-items:center}
 .menu a,.brand-txt strong,.brand-txt small{white-space:nowrap}
 .menu a{text-decoration:none;color:#D5DAE0;font-size:.84rem;letter-spacing:.05em;transition:color .2s}
 .menu a:hover{color:var(--gold)}
@@ -324,11 +324,26 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
 .as-list p{color:var(--muted);font-size:.95rem}
 .as-note{font-size:.84rem;color:var(--muted);margin-top:1.2rem;font-style:italic}
 @media (max-width:1020px){.as-grid{grid-template-columns:1fr;gap:44px}}
-@media (max-width:1120px){
+@media (max-width:1240px){
   .menu{display:none;position:absolute;top:76px;left:0;right:0;background:var(--navy-deep);flex-direction:column;align-items:flex-start;padding:22px 20px 28px;gap:18px;border-bottom:1px solid rgba(210,181,76,.2)}
   .menu.open{display:flex}
   .burger{display:block}
 }
+
+/* ---------- artigos ---------- */
+.art-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:2.6rem}
+.art-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.art-links .ig{font-size:.86rem;color:var(--muted);text-decoration:none}
+.art-links .ig:hover{color:var(--gold-deep)}
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.art-card{background:var(--white);border:1px solid var(--line);text-decoration:none;display:flex;flex-direction:column;padding-bottom:24px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.art-card:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(27,41,54,.1);border-color:var(--gold)}
+.art-card img{aspect-ratio:4/3;object-fit:cover;object-position:50% 50%;width:100%}
+.art-card .cat{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;padding:20px 24px 0}
+.art-card h3{font-family:var(--serif);font-weight:600;font-size:1.45rem;line-height:1.15;color:var(--navy);padding:8px 24px 0;flex:1}
+.art-card .more-link{font-size:.82rem;font-weight:600;color:var(--navy);padding:16px 24px 0;letter-spacing:.03em}
+@media (max-width:1020px){.art-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.art-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -346,7 +361,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
       <li><a href="#extrajudicial">Extrajudicial</a></li>
       <li><a href="#assessoria">Assessoria</a></li>
       <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#atendimento">Atendimento</a></li>
+      <li><a href="/artigos/">Artigos</a></li>
       <li><a href="#duvidas">Dúvidas</a></li>
       <li><a class="btn btn-gold" data-wa="Olá! Gostaria de agendar um atendimento." href="https://wa.me/5577998659195" target="_blank" rel="noopener">Agendar atendimento</a></li>
     </ul>
@@ -535,18 +550,17 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
   </div>
 </section>
 
-<!-- CONTEÚDO -->
-<section class="conteudo">
+<!-- ARTIGOS -->
+<section class="conteudo" id="artigos">
   <div class="wrap">
-    <div class="content-grid reveal">
-      <a href="https://www.instagram.com/emersonandrade.adv/" target="_blank" rel="noopener"><img src="img/conteudo-inventario.jpg" alt="Publicação: Inventário — por que ele não é opcional" width="640" height="800" loading="lazy"></a>
+    <div class="art-head reveal">
       <div>
-        <div class="eyebrow"><b>06</b> Conteúdo</div>
-        <h2>Informação jurídica <span class="gold-text">no Instagram</span></h2>
-        <p>Publicações informativas sobre Direito Imobiliário, Consumidor, Família e Sucessões, em linguagem acessível.</p>
-        <a class="btn btn-dark" href="https://www.instagram.com/emersonandrade.adv/" target="_blank" rel="noopener">Seguir @emersonandrade.adv</a>
+        <div class="eyebrow"><b>06</b> Artigos</div>
+        <h2>Informação jurídica <span class="gold-text">em linguagem acessível</span></h2>
       </div>
+      <div class="art-links"><a class="btn btn-dark" href="/artigos/">Ver todos os artigos</a><a class="ig" href="https://www.instagram.com/emersonandrade.adv/" target="_blank" rel="noopener">Instagram @emersonandrade.adv</a></div>
     </div>
+    <div class="art-grid reveal"><a class="art-card" href="/artigos/casamento-depois-dos-70-regime-de-bens/"><img src="img/artigos/casamento-depois-dos-70-regime-de-bens.jpg" alt="" width="1200" height="900" loading="lazy"><span class="cat">Família e Sucessões</span><h3>Casamento depois dos 70: o regime de bens é obrigatório?</h3><span class="more-link">Ler artigo →</span></a><a class="art-card" href="/artigos/stj-aviso-de-atraso-por-email-financiamento-de-veiculo/"><img src="img/artigos/stj-aviso-de-atraso-por-email-financiamento-de-veiculo.jpg" alt="" width="1200" height="900" loading="lazy"><span class="cat">Consumidor e Imobiliário</span><h3>Financiamento de veículo: aviso de atraso por e-mail tem validade, decide o STJ</h3><span class="more-link">Ler artigo →</span></a><a class="art-card" href="/artigos/inventario-por-que-nao-e-opcional/"><img src="img/artigos/inventario-por-que-nao-e-opcional.jpg" alt="" width="1200" height="900" loading="lazy"><span class="cat">Sucessões</span><h3>Inventário: por que ele não é opcional</h3><span class="more-link">Ler artigo →</span></a></div>
   </div>
 </section>
 
@@ -592,7 +606,7 @@ footer{background:var(--night);color:#8C96A0;font-size:.82rem;padding:56px 0 40p
       <div><img src="img/logo.png" alt="Emerson Andrade Advocacia e Consultoria Jurídica" width="808" height="486" loading="lazy"></div>
       <div>
         <h4>Navegação</h4>
-        <ul><li><a href="#areas">Áreas de atuação</a></li><li><a href="#extrajudicial">Atuação extrajudicial</a></li><li><a href="#assessoria">Assessoria contínua</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#atendimento">Atendimento</a></li><li><a href="#duvidas">Dúvidas frequentes</a></li></ul>
+        <ul><li><a href="#areas">Áreas de atuação</a></li><li><a href="#extrajudicial">Atuação extrajudicial</a></li><li><a href="#assessoria">Assessoria contínua</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#atendimento">Atendimento</a></li><li><a href="/artigos/">Artigos</a></li><li><a href="#duvidas">Dúvidas frequentes</a></li></ul>
       </div>
       <div>
         <h4>Contato</h4>
